@@ -1,0 +1,91 @@
+#bloom{
+    background-color: #2f2f2f;
+    height: 80px; 
+    color: white;
+    width: 100%;
+}
+
+#img_bloom{
+    padding-left: 200px; 
+    padding-top: 8px; 
+    float: left;
+}
+
+#header_links{
+    margin-left: 650px; 
+    padding-top:28px; 
+    word-spacing: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size:medium;
+}
+
+#loremDiv1{
+    background-color: #f1f1f1;
+    height: 300px; 
+    width: 50%; 
+    float: left;
+}
+
+#loremDiv2{
+margin-left: 200px; 
+float: left; 
+font-family: Arial, Helvetica, sans-serif; 
+height: 100%;
+}
+
+#imgDiv{
+    height: 300px;
+    float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+}
+
+.imgDiv1{
+    float: left; 
+    background-color: #ffffff; 
+    height: 400px; 
+    color: black; 
+    width: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#learnButton{
+    font-weight: bold; 
+    background-color: orange; 
+    color: white; 
+    border-color: orange; 
+    border-radius: 8px; 
+    width: 150px; 
+    height: 30px;
+}
+
+#imgDiv2{
+    float: left; 
+    background-color: #ffffff; 
+    height: 400px; 
+    color: black; 
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 850px;
+}
+
+.footerDiv1{
+    float: left; 
+    background-color: #2f2f2f; 
+    height: 400px; 
+    color: white;
+    width: 35%;
+}
+
+#footerDiv2{
+    float: left; 
+    background-color: #2f2f2f; 
+    height: 400px; 
+    color: white; 
+    width: 30%;
+}

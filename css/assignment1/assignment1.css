@@ -1,0 +1,103 @@
+#logo{
+    background-color: #333333; 
+    width: 100%; 
+    height: 100px;
+}
+
+#image{
+    padding-top: 20px; 
+    padding-left: 20px;
+}
+
+#links{
+    background-color: #666666;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+    float: left;
+}
+#link_list{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-top: 14px;
+}
+
+#linkDiv{
+    height: 48px;
+    width: 100px;
+    border: thin solid black;
+    border-top: transparent;
+    border-bottom: transparent;
+    float: left;
+    list-style-type: none;
+}
+
+#lorem{
+    background-color: white;
+    width: 75%;
+    height: 450px;
+    /* margin-bottom: 1000px; */
+    margin-top: 0px;
+    float: left;
+}
+
+#sidebar{
+    background-color: #e5e5e5;
+    width: 25%;
+    height: 650px;
+    /* margin-bottom: 1000px; */
+    margin-top: 0px;
+    float: left;
+}
+
+#loremList{
+    /* background-color: black; */
+    height: 150px;
+    width: 100%;
+    border-bottom: thin solid grey;
+    margin-top: 50px;
+}
+
+#img_lorem{
+    height: 120px;
+    width: 120px;
+    margin-left: 20px ;
+    margin-top: 10px;
+}
+
+#ashImage{
+    float: left;
+    height: 120px;
+    width: 120px;
+    margin-left: 15px;
+}
+
+#footerDiv{
+    margin-top:698px ; 
+    background-color: #333333; 
+    width :100%; 
+    height: 50px;
+}
+
+#footerText{
+    text-align: center; 
+    padding-top: 15px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white;
+}
+
+.sidebarMenu{
+    text-decoration: none; 
+    color: #f4821f; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 40px; 
+    
+}
+
+#sidebarHeading{
+    margin-left: 20px; 
+    border-bottom: thin solid black; 
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
