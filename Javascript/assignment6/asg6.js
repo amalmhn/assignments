@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest();
 var request1 = new XMLHttpRequest();
-var url = "http://battuta.medunes.net/api/country/all/?key=b54c942e0959e98dd9240ad02e7330c1"
+var url = "http://battuta.medunes.net/api/country/all/?key=07a17d45f1fe16807141252a46098943"
 
 request.open("get",url,true)
 request.send()
@@ -28,7 +28,8 @@ function region(){
     var regVal = document.getElementById("select1").value;
     console.log(regVal);
     // document.getElementById("select").value = ""
-    url1 = `http://battuta.medunes.net/api/region/${regVal}/all/?key=b54c942e0959e98dd9240ad02e7330c1`
+    
+    url1 = `http://battuta.medunes.net/api/region/${regVal}/all/?key=07a17d45f1fe16807141252a46098943`
     console.log(url1)
     request1.open("get",url1,true);
     request1.send();
@@ -48,6 +49,6 @@ function region(){
         }
     }
 }
-region();
+
 
 

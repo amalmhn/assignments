@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <select id="sel1" onchange="region()"></select>
+    <!--http://battuta.medunes.net/api/country/all/?key=07a17d45f1fe16807141252a46098943&callback=callback -->
+    <select id="sel2"></select>
+    <!-- http://battuta.medunes.net/api/region/${regVal}/all/?key=07a17d45f1fe16807141252a46098943&callback=callback -->
+
+    <script type="text/javascript">
+        d1 = document.querySelector("#sel1"); 
+            
+        var  callback = function(data){
+            console.log(data)
+            var a = data.map(obj=>{
+                // console.log(obj.title)
+                var sel = document.createElement("option");
+                sel.textContent = obj.name;
+                sel.value = obj.code;
+                document.querySelector('#sel1').appendChild(sel);
+                
+            })
+        }
+
+        var region = function(data){
+            regVal = document.getElementById("sel1").value;
+            console.log(regVal);
+            url = `http://battuta.medunes.net/api/region/${regVal}/all/?key=07a17d45f1fe16807141252a46098943&callback=cb`
+            console.log(url);
+            var script = document.getElementById("src2");
+            script.src = url;
+                        
+        }
+
+        var cb = function(data){
+            console.log("Hi1");
+            var sel2Remove = document.getElementById('sel2');
+            
+            var b = data.map(obj=>{
+                console.log(obj.region);
+                var sel2 = document.createElement("option");
+                sel2.textContent=obj.region;
+                sel2.value = obj.region;
+                sel2Remove.appendChild(sel2);
+            })
+        }
+        
+        </script>
+        <script src="http://battuta.medunes.net/api/country/all/?key=07a17d45f1fe16807141252a46098943&callback=callback"></script>
+        <script id="src2"></script>
+</body>
+</html>
