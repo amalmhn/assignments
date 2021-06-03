@@ -30,19 +30,25 @@
 
         var region = function(data){
             regVal = document.getElementById("sel1").value;
+            var head = document.getElementsByTagName("head")[0];
             console.log(regVal);
             url = `http://battuta.medunes.net/api/region/${regVal}/all/?key=07a17d45f1fe16807141252a46098943&callback=cb`
             console.log(url);
-            var script = document.getElementById("src2");
-            script.src = url;
+            var script = document.createElement("script");
+            script.setAttribute("src",url);
+            script.setAttribute("id","srcRegion");
+            head.appendChild(script);
                         
         }
 
         var cb = function(data){
-            console.log("Hi1");
+            console.log(data);
             var sel2Remove = document.getElementById('sel2');
-            
+            for (var i = sel2Remove.length - 1; i >= 0; i--) {
+                sel2Remove.remove(i);
+            }
             var b = data.map(obj=>{
+
                 console.log(obj.region);
                 var sel2 = document.createElement("option");
                 sel2.textContent=obj.region;
@@ -53,6 +59,6 @@
         
         </script>
         <script src="http://battuta.medunes.net/api/country/all/?key=07a17d45f1fe16807141252a46098943&callback=callback"></script>
-        <script id="src2"></script>
+        
 </body>
 </html>
